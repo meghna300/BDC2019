@@ -1,0 +1,63 @@
+.row{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Montserrat;
+}
+
+.facts{
+    color: white;
+    
+    font-weight: 700;
+    font-size: 2000%;
+    margin-top: 7rem;
+    text-shadow: 0 0 150px rgb(238, 237, 237), 0 0 150px rgb(238, 237, 237);
+    position: absolute;
+    z-index: -1;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: black;
+    /* border-bottom: 2px solid black;
+    border-top: 2px solid black; */
+    background-color: transparent;
+    /* border-color: black white black; */
+    font-weight: bold;
+    border: none
+}
+.nav-link:hover{
+    color: #DE1B2E;
+}
+
+.nav-tabs {
+    border-bottom: none;
+    justify-content: center;
+}
+.nav-link, .nav-link a{
+    padding: 1.5rem 4rem;
+    font-size: 1.5rem;
+    color: gray
+}
+
+.tab-img {
+	height: 46vh;
+    float: right;
+    padding-left: 2vw;
+    /* box-shadow: 10px 10px 50px gray; */
+}
+.tab-content {
+    padding: 5vh 4vw;
+    
+}
+.tabtext{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.tabtitle {
+	font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+	padding-bottom: 1.5rem;
+}
