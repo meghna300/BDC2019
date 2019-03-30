@@ -11,9 +11,9 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Open Sans", sans-serif;
-  color: #ffffff;
-  background-color: #22283f;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(26, 26, 26);
+  background-color: #DE1B2E;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -52,20 +52,7 @@ Main Components
   font-size: 2.4rem;
 }
 .cd-section:first-of-type > div {
-  background-color: #2b334f;
-}
-.cd-section:first-of-type > div::before {
-  /* alert -> all scrolling effects are not visible on small devices */
-  content: 'Effects not visible on mobile!';
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  top: 20px;
-  z-index: 2;
-  font-weight: bold;
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  color: #6a7083;
+  background-color: #fff;
 }
 .cd-section:nth-of-type(2) > div {
   background-color: #2e5367;
@@ -211,5 +198,91 @@ Main Components
 @media only screen and (min-width: 1050px) {
   .cd-vertical-nav {
     display: block;
+  }
+}
+
+.section {
+  height:100vh;
+}
+/* home page */
+.heading-first {
+  font-size: 1em;
+  padding: 2em 0em ;
+  text-align: center;
+}
+.landing{
+  margin: 40px 0 0 0;
+}
+.landing-title {
+  font-size: 4em;
+  font-weight: 800;
+  padding: 10px 0 ;
+  color:#fff;
+  background: url(../assets/1.jpg) no-repeat;
+  background-size: cover;
+  background-position: left;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    animation: move-up 0.8s ease-out;
+}
+.landing-text {
+font-size: 2em;
+opacity: 0;;
+color: #6F0F0C;
+padding: 10px 10px;
+animation: move-up 0.8s ease-out 0.5s forwards;
+}
+.landing-back:after {
+  content: '';
+  position: absolute;
+  width: 90%;
+  height: 120%;
+  margin-top: -10%;
+  margin-left: -5%;
+  transform: skewX(-15deg);
+  background-color: #af0e20;
+}
+.btn{
+    border-radius: none;
+    background-color:transparent;
+	border:2px solid #af0e20;
+	overflow: hidden;
+	transition: 0.5s;
+  width: 50%;
+  font-size:1.25em;
+  margin: 1em;
+}
+.btn:after {
+    content: '';
+    width: 0px;
+    height: 120%;
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+    background-color: #af0e20;
+    transform: skewX(15deg);
+    z-index: -1;
+    transition: .5s;
+}
+.btn:hover{
+    cursor:pointer;
+    color:#fff;
+}
+.btn:hover:after {
+    left:-10%;
+    width:120%;
+}
+.btn:focus{
+    border:none;
+    box-shadow:0 0 0 .2rem rgba(255,0,0,.25);
+}
+@keyframes move-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
