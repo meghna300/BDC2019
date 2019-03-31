@@ -8,17 +8,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+    
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" /> -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/hover-min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    <script src="js/modernizr.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/hover-min.css">
+ 
    
 </head>
-    <body data-hijacking="on" data-animation="gallery">
-        <section class="cd-section visible">
-          <div class="container-fluid section">
+    <body class="fp-responsive">
+        <div id="fullpage">
+        <div class="section home" data-tooltip="Home">
+          <div class="container-fluid slide-section">
+             <div class="back-elements-1"></div>
+            <div class="back-elements-2"></div>
             <div class="row justify-content-between no-gutter">
-                <div class="col-md-5 col-2 heading-first">
+                <div class="col-md-5 col-12 heading-first">
                     AJAY KUMAR GARG ENGINEERING COLLEGE
                 </div>
                 <div class="col-md-4 col-2 heading-first">
@@ -26,7 +35,7 @@
                 </div>
             </div>
             <div class="row justify-content-center landing">
-                <div class="col-md-4">
+                <div class="col-md-5">
                    <h1 class="landing-title">
                        BLOOD
                    </h1>
@@ -38,64 +47,228 @@
                    </h1>
                    <h3 class="landing-text">9th April 2019</h3>
                    <h3 class="landing-text">MECHANICAL BLOCK</h3>
-                   <div class= "row">
-                   <button class="btn col-md-6">Donate</button>
-                   </div>
-                </div>
-                <div class="col-md-4 landing-back">
+            
+                   <button class="btn" href="#gallery">Donate</button>
                    
                 </div>
+                <div class="col-md-5 landing-back" data-tilt>
+                   <img src="assets/landing.png" class="landing-img">
+                </div>
             </div>
             </div>
-        </section>
+        </div>
     
-        <section class="cd-section">
-            <div>
-                <h2>Section 2</h2>
-            </div>
-        </section>
-    
-        <section class="cd-section">
-            <div class="row justify-content-center">
-                <div class="col-10">
-                    <div class="your-class">
-                        <div>your content</div>
-                        <div>your content</div>
-                        <div>your content</div>
+        <div class="section fact" data-tooltip="Myths">
+            <div class='facts'>FACTS</div>
+            <div class="back-elements-1"></div>
+            <div class="back-elements-2"></div>
+            <div class="container">
+                <ul class="nav nav-tabs " id="myTab" role="tablist">
+                    <li class="nav-item borderXwidth">
+                        <a class="nav-link active hvr-underline-from-left" id="home-tab" data-toggle="tab" href="#ricmartin" role="tab" aria-controls="ricmartin"
+                            aria-selected="true">Social Awarness </a>
+                    </li>
+                    <li class="nav-item borderXwidth">
+                        <a class="nav-link hvr-underline-from-left" id="profile-tab" data-toggle="tab" href="#socialaware" role="tab" aria-controls="profile"
+                            aria-selected="false">Ric Martin</a>
+                    </li>
+                    <li class="nav-item borderXwidth">
+                        <a class="nav-link hvr-underline-from-left" id="contact-tab" data-toggle="tab" href="#tathya" role="tab" aria-controls="contact"
+                            aria-selected="false">Tathya</a>
+                    </li>
+                    <li class="nav-item borderXwidth">
+                        <a class="nav-link hvr-underline-from-left " id="contact-tab" data-toggle="tab" href="#mythos" role="tab" aria-controls="contact"
+                            aria-selected="false">Mythos</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="ricmartin" role="tabpanel" aria-labelledby="home-tab">
+                        <h1 class="tabtitle">RIC MARTIN, THE "WALKING TALKING PLATELET FACTORY"</h1>
+                        <img src="assets/ricmartin.png" class="img-fluid tab-img " data-tilt data-tilt-reset="false">
+                        <span class="tabtext">
+                            I first began donating whole blood when I turned 21 in 1973 with the American Red Cross and I gave about two gallons of whole
+                            blood there before I started donating with the local agency, Inova, in '76. Back then Inova's operation was
+                            a tiny room in the basement of Fairfax Hospital. I remember that the room was rather small and anyone over
+                            5'10" would have to crunch up a little to allow the phlebotomist to squeeze past the beds.
+                            <br>
+                            <br> It makes me very proud; we have been able to bond over the experience. I get to see her every time she donates
+                            and I can see her doing the math in her head of what/when she "thinks" she could over take my record.
+                        </span>
+                    </div>
+                    <div class="tab-pane fade" id="socialaware" role="tabpanel" aria-labelledby="profile-tab">
+                        <h1 class="tabtitle">SOCIAL AWARENESS</h1>
+                        <img src="assets/socialaware.png" class="img-fluid tab-img">
+                        <div class="tabtext">
+                            One single donation can be split into three separate parts, helping save or improve the lives of patients. Just three teaspoons
+                            of blood can save the life of a premature baby. If you donate blood, you can help in saving lives of many
+                            patients.
+                            <br>
+                            <br> It is a good idea to check the safety and hygiene standards of the local camps before you sign up. "Make
+                            sure that the vials and syringes being used are new and they are not reusing their syringes" The attendants
+                            and doctors should be wearing gloves while handling the blood and should dispose of syringes and testing
+                            plates immediately after use.
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tathya" role="tabpanel" aria-labelledby="contact-tab">
+                        <h1 class="tabtitle">TATHYA</h1>
+                        <img src="assets/bloodcell.png" class="img-fluid tab-img">
+                        <span class="tabtext">
+                            The average red blood cell transfusion is approximately 3 pints.
+                            <br>
+                            <br> More than 1 million new people are diagnosed with cancer each year. Many of them will need blood, sometimes
+                            daily, during their chemotherapy treatment.
+                            <br>
+                            <br> Healthy donor may donate red blood cells every 56 days, or double red cells every 112 days.
+                            <br>
+                            <br> If you began donating blood at age 18 and donated every 90 days until you reached 60, you would have donated
+                            30 gallons of blood, potentially helping save more than 500 lives!
+                        </span>
+                    </div>
+                    <div class="tab-pane fade" id="mythos" role="tabpanel" aria-labelledby="contact-tab">
+                        <h1 class="tabtitle">MYTHOS</h1>
+                        <img src="assets/myth.png" class="img-fluid tab-img">
+                        <span class="tabtext">
+                            Blood donation will take a lot of time.
+                            <br>
+                            <br> People with infections, high cholesterol, diabetes or hypertension cannot donate blood.
+                            <br>
+                            <br> I have already donated blood once this year, I can't donate again
+                            <br>
+                            <br> If I donate blood I am susceptible to contract diseases like HIV
+                            <br>
+                            <br> I suffer from diabetes, I cannot donate blood
+                        </span>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     
-        <section class="cd-section">
-            <div>
-                <h2>Section 4</h2>
+        <div class="section"   id="gallery" data-tooltip="Gallery">
+    <div class="container-fluid gallery">
+        <div class="back-elements-1"></div>
+        <div class="back-elements-2"></div>
+        <h1 class="section-heading">GALLERY</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-10">
+                <div class="single-item">
+                    <div>
+                        <img src="assets/gallery/1.JPG" alt="img" class="gallery-img">
+                    </div>
+                    <div>
+                        <img src="assets/gallery/2.jpg" class="gallery-img">
+                    </div>
+                    <div>
+                        <img src="assets/gallery/3.JPG" class="gallery-img">
+                    </div>
+                    <div>
+                        <img src="assets/gallery/4.JPG" class="gallery-img">
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </div>
+        </div>
     
-        <section class="cd-section">
+        <div class="section" data-tooltip="Team">
+            <div class='facts'>TEAM</div>
+            <div class="back-elements-1" style="border-color: #000;"></div>
+            <div class="back-elements-2" style="border-color: #000;"></div>
+    
+         <h3 class="team-sub-heading">CONVENORS</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-2 col-sm-5 team-member">
+                <img src="assets/meghna.jpg" class="team-img">
+                <span class="member-name">Name</span>
+            </div>
+            <div class="col-md-2 col-sm-5 team-member" >
+                <img src="assets/meghna.jpg" class="team-img">
+                <span class="member-name">Name</span>
+            </div>
+            <div class="col-md-2 col-sm-5 team-member">
+                <img src="assets/meghna.jpg" class="team-img" >
+                <span class="member-name">Name</span>
+            </div>
+            <div class="col-md-2 col-sm-5 team-member">
+                <img src="assets/meghna.jpg" class="team-img" >
+                <span class="member-name">Name</span>
+            </div>
+            <div class="col-md-2 col-sm-5 team-member">
+                <img src="assets/meghna.jpg" class="team-img">
+                <span class="member-name">Name</span>
+            </div>
+        </div>
+        <h3 class="team-sub-heading">WEB TEAM</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-2 col-sm-5 team-member">
+                <img src="assets/meghna.jpg" class="team-img">
+                <span class="member-name">Name</span>
+            </div>
+            <div class="col-md-2 col-sm-5 team-member">
+                <img src="assets/meghna.jpg" class="team-img">
+                <span class="member-name">Name</span>
+            </div>
+            <div class="col-md-2 col-sm-5 team-member">
+                <img src="assets/meghna.jpg" class="team-img">
+                <span class="member-name">Name name</span>
+            </div>
+            <div class="col-md-2 col-sm-5 team-member">
+                <img src="assets/meghna.jpg" class="team-img">
+                <span class="member-name">Name</span>
+            </div>
+            <div class="col-md-2 col-sm-5 team-member">
+                <img src="assets/meghna.jpg" class="team-img" >
+                <span class="member-name">Name</span>
+            </div>
+        </div>
+        </div>
+    
+        <section class="section" data-tooltip="Register">
             <div>
                 <h2>Section 5</h2>
             </div>
-        </section>
-    
-        <nav>
-            <ul class="cd-vertical-nav">
-                <li>
-                    <a href="#0" class="cd-prev inactive">Next</a>
-                </li>
-                <li>
-                    <a href="#0" class="cd-next">Prev</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- .cd-vertical-nav -->
+        </div>
+       
         <script src="js/jquery.min.js"></script>
-        <script src="js/velocity.min.js"></script>
-        <script src="js/velocity.ui.min.js"></script>
-        <script src="js/scroll.js"></script>
-        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/scrolloverflow.min.js"></script>
+        <script src="js/fullpage.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script type="text/javascript" src="js/vanilla-tilt.babel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+        <script type="text/javascript" src="js/vanilla-tilt.babel.min.js"></script>
+        <script>
+        $(document).ready(function () {
+              $('.single-item').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                cssEase: 'linear',
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                arrows: true
+            });
+            
+                
+            });
+        </script>
+        <script>
+        $(document).ready(function () {
+                $('#fullpage').fullpage({
+                    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+                    navigation:true,
+                    responsiveWidth: 768,
+                    scrollOverflow: true
+                });
+            });</script>
+            <script>
+            $('.js-tilt').tilt({
+                    glare: true,
+                    maxGlare: .5,
+                    perspective: 2000    
+                })
+        </script>
         
-        <!-- Resource jQuery -->
     </body>
 </html>
