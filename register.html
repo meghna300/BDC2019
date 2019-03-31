@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="css/hover-min.css">
+    <script type="text/javascript" src="js/jquery.min.js" ></script>
+    <script type="text/javascript" src="js/materialize.min.js" ></script>
+    <script type="text/javascript" src="js/validations.js" ></script>
+
+
+</head>
+<body>
+    <div class='facts'>REGISTER</div>
+        <span class="reg">REGISTER YOURSELF</span>
+<div class="container">
+        <form id="registration_form" method="POST" >
+                <div class="form wow fadeIn">
+                    <div class="form-row">
+                    <div class="form-group col-md-4">
+                            <div class="input-field">
+                                    <i class="flaticon-edit prefix" style="display:inline"></i>
+                                    <input id="student_no" type="text" class="form-control" name="student_no" autocomplete="off">
+                                    <label for="student_no">Student No.</label>
+                                  </div>
+                      <span id="err_student_no" class="error"></span>
+                    </div>
+                    <div class="form-group col-md-4">
+                            <div class="input-field">
+                                    <i class="flaticon-heart prefix" style="display:inline"></i>
+                                    <input id="name" type="text" class="validate">
+                                    <label for="name">Donor Name</label>
+                                  </div>
+                        <span id="err_name" class="error"></span>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                        <div class="form-group col-8">
+                                <label>Course:</label>
+          <select class="browser-default" id="course">
+            <option value="" disabled selected>Choose your Course</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="M.Tech">M.Tech</option>
+            <option value="MBA">MBA</option>
+            <option value="MCA">MCA</option>
+          </select>
+                        </div>
+                  </div>
+
+                  <div class="form-row">
+                        <div class="form-group col-4">
+                                <label>Year:</label>
+          <select class="browser-default" id="number">
+            <option value="" disabled selected>Choose your year</option>
+            <option value="1" id="1">1</option>
+            <option value="2" id="2">2</option>
+            <option value="3" id="3">3</option>
+            <option value="4" id="4">4</option>
+          </select>
+                        </div>
+
+                        <div class="form-group col-4">
+                                <label>Blood Group:</label>
+          <select class="browser-default">
+            <option value="" disabled selected>Choose your Blood Group</option>
+            <option value="AP">A+</option>
+              <option value="AN">A-</option>
+              <option value="ABP">AB+</option>
+              <option value="ABN">AB-</option>
+              <option value="BP">B+</option>
+              <option value="BN">B-</option>
+              <option value="OP">O+</option>
+              <option value="ON">O-</option>
+              <option value="Don't know">Don't Know</option>
+          </select>
+                        </div>
+
+                  </div>
+
+                  <div class="form-row">
+                      <div class="col-2">Gender:</div>
+                        <p class="col-3" >
+                                <label> 
+                                  <input class="with-gap" name="male" type="radio"  />
+                                  <span>Male</span>
+                                </label>
+                              </p>
+                              <p class="col-3">
+                                    <label> 
+                                      <input class="with-gap" name="female" type="radio"  />
+                                      <span>Female</span>
+                                    </label>
+                                  </p>
+                  </div>
+
+                  <div class="form-row">
+                        <div class="form-group col-md-4">
+                                <div class="input-field">
+                                        <i class="flaticon-mail prefix" style="display:inline"></i>
+                                        <input id="email" type="text" class="validate ">
+                                        <label for="email">E-mail</label>
+                                      </div>
+                          <span id="err_email" class="error"></span>
+                        </div>
+                        <div class="form-group col-md-4">
+                                <div class="input-field">
+                                        <i class="flaticon-phone-call prefix" style="display:inline"></i>
+                                        <input id="contact_number" type="text" class="validate">
+                                        <label for="contact_number">Contact No.</label>
+                                      </div>
+                            <span id="#err_contact_no" class="error"></span>
+                        </div>
+                      </div>
+
+                </div>
+                <div class="btn-large hvr-bounce-to-bottom" id="regbtn"><i class="flaticon-care left"></i>Register</div>
+        </form>
+    </div>
+    
+</body>
+</html>
