@@ -19,8 +19,8 @@
 <body>
     <div class='facts'>REGISTER</div>
         <span class="reg">REGISTER YOURSELF</span>
-<div class="container">
-        <form id="registration_form" method="POST" >
+    <div class="container-fluid">
+        <form id="registration_form" method="POST"  >
                 <div class="form wow fadeIn">
                     <div class="form-row">
                     <div class="form-group col-md-4">
@@ -42,7 +42,7 @@
                   </div>
                   <div class="form-row">
                         <div class="form-group col-8">
-                                <label>Course:</label>
+                                <label class="font-weight-bold lab">Course:</label>
           <select class="browser-default" id="course">
             <option value="" disabled selected>Choose your Course</option>
             <option value="B.Tech">B.Tech</option>
@@ -55,7 +55,7 @@
 
                   <div class="form-row">
                         <div class="form-group col-4">
-                                <label>Year:</label>
+                                <label class="font-weight-bold lab">Year:</label>
           <select class="browser-default" id="number">
             <option value="" disabled selected>Choose your year</option>
             <option value="1" id="1">1</option>
@@ -66,7 +66,7 @@
                         </div>
 
                         <div class="form-group col-4">
-                                <label>Blood Group:</label>
+                                <label class="font-weight-bold lab">Blood Group:</label>
           <select class="browser-default">
             <option value="" disabled selected>Choose your Blood Group</option>
             <option value="AP">A+</option>
@@ -84,16 +84,16 @@
                   </div>
 
                   <div class="form-row">
-                      <div class="col-2">Gender:</div>
+                      <div class="col-2 font-weight-bold gender ">Gender:</div>
                         <p class="col-3" >
                                 <label> 
-                                  <input class="with-gap" name="male" type="radio"  />
+                                  <input class="with-gap" type="radio" name="inlineRadioOptions" id="male" value="male" checked />
                                   <span>Male</span>
                                 </label>
                               </p>
                               <p class="col-3">
                                     <label> 
-                                      <input class="with-gap" name="female" type="radio"  />
+                                      <input class="with-gap" type="radio" name="inlineRadioOptions" id="female" value="female"  />
                                       <span>Female</span>
                                     </label>
                                   </p>
@@ -111,7 +111,7 @@
                         <div class="form-group col-md-4">
                                 <div class="input-field">
                                         <i class="flaticon-phone-call prefix" style="display:inline"></i>
-                                        <input id="contact_number" type="text" class="validate">
+                                        <input id="contact_number" type="tel"  class="form-control" name="contact" autocomplete="off">
                                         <label for="contact_number">Contact No.</label>
                                       </div>
                             <span id="#err_contact_no" class="error"></span>
@@ -119,9 +119,8 @@
                       </div>
 
                 </div>
-                <div class="btn-large hvr-bounce-to-bottom" id="regbtn"><i class="flaticon-care left"></i>Register</div>
-        </form>
-    </div>
-    
+                <div class="btn-large hvr-bounce-to-bottom" id="regbtn">Register</div>
+        </form>   
+    </div> 
 </body>
 </html>
