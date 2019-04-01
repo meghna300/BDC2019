@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="css/hover-min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
    
 </head>
     <body class="fp-responsive">
@@ -62,9 +62,15 @@
                    <button class="btn col-md-6 hvr-pulse-grow" href="#gallery">Donate</button>
                    
                 </div>
-                <div class="col-md-5 landing-back" data-tilt data-tilt-max="10" data-tilt-speed="200" data-tilt-perspective="300">
-                   <img src="assets/heart.png" class="landing-img ">
-                   <img scr="assets/blood-drops.svg" class="drop">
+                <div class="col-md-5" data-tilt data-tilt-max="10" data-tilt-speed="200" data-tilt-perspective="300">
+                    <div class="landing-back" id="scene">
+                   <div class="layer" data-depth="0.6"><img src="assets/heart.png" class="landing-img heartBeat"></div>
+                   <div class="layer" data-depth="0.2"><img src="assets/blood-drop.svg" class=" drop1 heartBeat-alter"></div>
+                   <div class="layer" data-depth="0.2"><img src="assets/blood-drop.svg" class="drop2 heartBeat-alter"></div>
+                <div class="layer" data-depth="0.2">
+                    <img src="assets/blood-drop.svg" class="drop3 heartBeat-alter">
+                    </div>
+                </div>
                 </div>
             </div>
             </div>
@@ -72,8 +78,8 @@
     
         <div class="section fact" data-tooltip="Myths">
             <div class='facts'>FACTS</div>
-            <div class="back-elements-1"></div>
-            <div class="back-elements-2"></div>
+            <div class="back-elements-1 heartBeat"></div>
+            <div class="back-elements-2 heartBeat"></div>
             <div class="container">
                 <ul class="nav nav-tabs " id="myTab" role="tablist">
                     <li class="nav-item borderXwidth">
@@ -153,8 +159,8 @@
     
         <div class="section gallery"   id="gallery" data-tooltip="Gallery">
     <div class="container-fluid ">
-        <div class="back-elements-1"></div>
-        <div class="back-elements-2"></div>
+        <div class="back-elements-1 heartBeat"></div>
+        <div class="back-elements-2 heartBeat"></div>
         <h1 class="section-heading">GALLERY</h1>
         <div class="row justify-content-center">
             <div class="col-md-6 col-10">
@@ -179,53 +185,73 @@
     
         <div class="section" data-tooltip="Team">
             <div class='facts'>TEAM</div>
-            <div class="back-elements-1" style="border-color: #000;"></div>
-            <div class="back-elements-2" style="border-color: #000;"></div>
+            <div class="back-elements-1 heartBeat" style="border-color: #000;"></div>
+            <div class="back-elements-2 heartBeat" style="border-color: #000;"></div>
     
          <h3 class="team-sub-heading">CONVENORS</h3>
         <div class="row justify-content-center">
             <div class="col-md-2 col-sm-6 col-6 team-member">
                 <img src="assets/meghna.jpg" class="team-img">
-                <span class="member-name">Name</span>
+                <span class="member-name">Name
+                    <hr>
+                </span>
             </div>
             <div class="col-md-2 col-sm-6 col-6 team-member" >
                 <img src="assets/meghna.jpg" class="team-img">
-                <span class="member-name">Name</span>
+                <span class="member-name">Name
+                    <hr>
+                </span>
             </div>
             <div class="col-md-2 col-sm-6 col-6 team-member">
                 <img src="assets/meghna.jpg" class="team-img" >
-                <span class="member-name">Name</span>
+                <span class="member-name">Name
+                    <hr>
+                </span>
             </div>
             <div class="col-md-2 col-sm-6 col-6 team-member">
                 <img src="assets/meghna.jpg" class="team-img" >
-                <span class="member-name">Name</span>
+                <span class="member-name">Name
+                    <hr>
+                </span>
             </div>
             <div class="col-md-2 col-sm-6 col-6 team-member">
                 <img src="assets/meghna.jpg" class="team-img">
-                <span class="member-name">Name</span>
+                <span class="member-name">Name
+                    <hr>
+                </span>
             </div>
         </div>
         <h3 class="team-sub-heading">WEB TEAM</h3>
         <div class="row justify-content-center">
             <div class="col-md-2 col-sm-6 col-6 team-member">
                 <img src="assets/meghna.jpg" class="team-img">
-                <span class="member-name">Name</span>
+                <span class="member-name">Name
+                    <hr>
+                </span>
             </div>
             <div class="col-md-2 col-sm-6 col-6 team-member">
                 <img src="assets/meghna.jpg" class="team-img">
-                <span class="member-name">Name</span>
+                <span class="member-name">Name
+                    <hr>
+                </span>
             </div>
             <div class="col-md-2 col-sm-6 col-6 team-member">
                 <img src="assets/meghna.jpg" class="team-img">
-                <span class="member-name">Name name</span>
+                <span class="member-name">Name name
+                    <hr>
+                </span>
             </div>
             <div class="col-md-2 col-sm-6 col-6 team-member">
                 <img src="assets/meghna.jpg" class="team-img">
-                <span class="member-name">Name</span>
+                <span class="member-name">Name
+                    <hr>
+                </span>
             </div>
             <div class="col-md-2 col-sm-6 col-6 team-member">
                 <img src="assets/meghna.jpg" class="team-img" >
-                <span class="member-name">Name</span>
+                <span class="member-name">Name
+                    <hr>
+                </span>
             </div>
         </div>
         </div>
@@ -357,16 +383,19 @@
                 </div>
             </div>
 
-            <div id="sdc">
-                    <a href="http://www.silive.in" target="_blank" style="color: black;">
-                      <span>Site Donated by</span>
-                      <br>
-                      <img src="assets/SILOGO.svg">
-                      <span id="si">SOFTWARE <br> INCUBATOR</span>
-                    </a>
-                  </div>
+            
             
             </section>
+            
+        </div>
+        <div id="sdc">
+            <a href="http://www.silive.in" target="_blank" style="color: black;">
+                <span>Site Donated by</span>
+                <br>
+                <img src="assets/SILOGO.svg">
+                <span id="si">SOFTWARE
+                    <br> INCUBATOR</span>
+            </a>
         </div>
         
        
@@ -405,6 +434,10 @@
                     scrollOverflow: true
                 });
             });</script>
+            <script type="text/javascript">
+                var scene = document.getElementById('scene');
+                var parallaxInstance = new Parallax(scene);
+            </script>
         
     </body>
 </html>

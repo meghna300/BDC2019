@@ -62,12 +62,35 @@ animation: move-up 0.8s ease-out 0.5s forwards;
   background: linear-gradient(to bottom, #990A0A,rgba(176, 7, 7, 0.808)), url(../assets/1.jpg);
 } */
 .landing-img {
+  position: absolute;
   width:90%;
   z-index: 1000;
+  margin-left:10%;
   
 }
-.drop {
+.layer{
+  position:  relative !important;
+}
+.drop1 {
   position: absolute;
+  width: 10%;
+    margin-top: 60%;
+    margin-left: 80%;
+    transform: translate(-50%,-50%);
+}
+.drop2 {
+  position: absolute;
+  width: 10%;
+    margin-top: 0%;
+    margin-left: 95%;
+    transform: translate(-50%,-50%);
+}
+.drop3 {
+  position: absolute;
+  width: 10%;
+    margin-top: 40%;
+    margin-left: 5%;
+    transform: translate(-50%,-50%);
 }
 .back-elements-1 {
   height: 50px;
@@ -265,8 +288,18 @@ margin-top: 1em;
   font-weight:600;
   color:#000;
 }
+.member-name hr{
+  margin:0;
+  border:1px solid #000;
+  width:0;
+  transition: all 0.5s ease-in;
+  text-align: center;
+}
+.team-member:hover .member-name hr{
+  width:90%;
+}
 .team-sub-heading{
-  padding: 0.5em 3em;
+  padding: 0.75em 3em;
   font-weight: 800;
 }
 /* register */
@@ -343,29 +376,29 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 /*heartbeat*/
 @keyframes heartBeat {
   0% {
-    transform: scale(.7);
+    transform: scale(1.1);
   }
 
   14% {
-    transform: scale(.6);
+    transform: scale(1);
   }
 
   28% {
-    transform: scale(.7);
+    transform: scale(1.1);
   }
 
   42% {
-    transform: scale(.6);
+    transform: scale(1);
   }
 
   70% {
-    transform: scale(.7);
+    transform: scale(1.1);
   }
   84%{
-    transform: scale(.6);
+    transform: scale(1);
   }
   100%{
-    transform: scale(.7);
+    transform: scale(1.1);
   }
 }
 
@@ -373,6 +406,13 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
   animation-name: heartBeat;
   animation-duration: 2.3s;
  
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+.heartBeat-alter {
+  animation-name: heartBeat;
+  animation-duration: 2.3s;
+ animation-direction: reverse;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
 }
@@ -397,6 +437,10 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 @media only screen and (max-width: 767px) {
   .heading-first:nth-of-type(2) {
     display: none;
+  }
+  .landing-back {
+    height:400px;
+    text-align: justify;
   }
   .landing-title {
     /* font-size: 2.5em; */
