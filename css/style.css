@@ -1,18 +1,21 @@
 
 
 .slide-section {
-  height:100vh;
   overflow: hidden;
 }
 .home {
   background: radial-gradient(#fff,rgb(238, 237, 237));
+  background-color: #fff;
+ 
+  
 }
 /* home page */
 .heading-first {
-  font-size: 1em;
+  font-size: 1.25em;
   padding: 1em 0em ;
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
+  color: #000;
 }
 .landing{
   margin: 40px 0 0 0;
@@ -32,16 +35,12 @@
 .landing-text {
 font-size: 2em;
 opacity: 0;;
-color: #6F0F0C;
+color: #af0e20;
 padding: 10px 10px;
 animation: move-up 0.8s ease-out 0.5s forwards;
 }
-.landing-back {
-  /* height: 400px; */
-  transform-style: preserve-3d;
-  text-align: left;
-}
-.landing-back:before{
+
+/* .landing-back:before{
   content:'';
   position: absolute;
   width:70%;
@@ -60,15 +59,14 @@ animation: move-up 0.8s ease-out 0.5s forwards;
   transform: skewX(15deg);
   border-radius: 50%;
   background: linear-gradient(to bottom, #990A0A,rgba(176, 7, 7, 0.808)), url(../assets/1.jpg);
-}
+} */
 .landing-img {
-  height: 80%;
-  position: absolute;
+  width:90%;
   z-index: 1000;
-  margin-left: -15%;
-  margin-top: 5%;
-  transform: translateZ(30px);
   
+}
+.drop {
+  position: absolute;
 }
 .back-elements-1 {
   height: 50px;
@@ -350,6 +348,44 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
   font-weight:700;
   color:#af0e20;
 }
+/*heartbeat*/
+@keyframes heartBeat {
+  0% {
+    transform: scale(.7);
+  }
+
+  14% {
+    transform: scale(.6);
+  }
+
+  28% {
+    transform: scale(.7);
+  }
+
+  42% {
+    transform: scale(.6);
+  }
+
+  70% {
+    transform: scale(.7);
+  }
+  84%{
+    transform: scale(.6);
+  }
+  100%{
+    transform: scale(.7);
+  }
+}
+
+.heartBeat {
+  animation-name: heartBeat;
+  animation-duration: 2.3s;
+ 
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+/* hearbeat */
+
 @media (max-width: 1200px) {
     .nav-link, .nav-link a{
         padding: 1rem 2.6rem;
@@ -397,43 +433,9 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
   .landing-text {
     font-size: 1.5em;
   }
-  .landing-back {
-    margin-left: 30px;
-  }
-  .landing-back:before {
-    width:80%;
-    height:80%;
-    margin-left: 15%;
-  }
-  .landing-back:after {
-    width:80%;
-    height:80%;
-    margin-left:-10%;
-  }
-  .landing-img {
-    height: 70%;
-    margin-left:-15%;
-  }
 }
-@media only screen and (max-width: 900px) {
-  .landing-back:before {
-    width:90%;
-  }
-  .landing-back:after {
-    width:90%;
-  }
-  .landing-img {
-    margin-left:-20%;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .landing-back:before , .landing-back::after {
-    width:75%;
-  }
-  .landing-img {
-    margin-left:-25%;
-  }
-}
+
+
 @keyframes move-up {
   0% {
     opacity: 0;
