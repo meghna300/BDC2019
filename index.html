@@ -22,7 +22,17 @@
    
 </head>
     <body class="fp-responsive">
+            <!-- <div id="sdc">
+                    <a href="http://www.silive.in" target="_blank" style="color: black;">
+                      <span>Site Donated by</span>
+                      <br>
+                      <img src="assets/SILOGO.svg">
+                      <span id="si">SOFTWARE <br> INCUBATOR</span>
+                    </a>
+                  </div> -->
+
         <div id="fullpage">
+                
         <div class="section home" data-tooltip="Home">
           <div class="container-fluid slide-section">
              <div class="back-elements-1"></div>
@@ -49,7 +59,7 @@
                    <h3 class="landing-text">9th April 2019</h3>
                    <h3 class="landing-text">MECHANICAL BLOCK</h3>
                 
-                   <button class="btn col-md-6" href="#gallery">Donate</button>
+                   <button class="btn col-md-6 hvr-pulse-grow" href="#gallery">Donate</button>
                    
                 </div>
                 <div class="col-md-5 landing-back" data-tilt>
@@ -66,7 +76,7 @@
             <div class="container">
                 <ul class="nav nav-tabs " id="myTab" role="tablist">
                     <li class="nav-item borderXwidth">
-                        <a class="nav-link active hvr-underline-from-left" data-toggle="tab" href="#ricmartin" role="tab" aria-selected="true">Ric Martin </a>
+                        <a class="nav-link hvr-underline-from-left active" data-toggle="tab" href="#ricmartin" role="tab" aria-selected="true">Ric Martin </a>
                     </li>
                     <li class="nav-item borderXwidth">
                         <a class="nav-link hvr-underline-from-left" data-toggle="tab" href="#socialaware" role="tab" aria-selected="false">Social Awareness</a>
@@ -140,8 +150,8 @@
             </div>
         </div>
     
-        <div class="section"   id="gallery" data-tooltip="Gallery">
-    <div class="container-fluid gallery">
+        <div class="section gallery"   id="gallery" data-tooltip="Gallery">
+    <div class="container-fluid ">
         <div class="back-elements-1"></div>
         <div class="back-elements-2"></div>
         <h1 class="section-heading">GALLERY</h1>
@@ -173,54 +183,54 @@
     
          <h3 class="team-sub-heading">CONVENORS</h3>
         <div class="row justify-content-center">
-            <div class="col-md-2 col-sm-5 team-member">
+            <div class="col-md-2 col-sm- team-member">
                 <img src="assets/meghna.jpg" class="team-img">
                 <span class="member-name">Name</span>
             </div>
-            <div class="col-md-2 col-sm-5 team-member" >
+            <div class="col-md-2 col-sm- team-member" >
                 <img src="assets/meghna.jpg" class="team-img">
                 <span class="member-name">Name</span>
             </div>
-            <div class="col-md-2 col-sm-5 team-member">
+            <div class="col-md-2 col-sm- team-member">
                 <img src="assets/meghna.jpg" class="team-img" >
                 <span class="member-name">Name</span>
             </div>
-            <div class="col-md-2 col-sm-5 team-member">
+            <div class="col-md-2 col-sm- team-member">
                 <img src="assets/meghna.jpg" class="team-img" >
                 <span class="member-name">Name</span>
             </div>
-            <div class="col-md-2 col-sm-5 team-member">
+            <div class="col-md-2 col-sm- team-member">
                 <img src="assets/meghna.jpg" class="team-img">
                 <span class="member-name">Name</span>
             </div>
         </div>
         <h3 class="team-sub-heading">WEB TEAM</h3>
         <div class="row justify-content-center">
-            <div class="col-md-2 col-sm-5 team-member">
+            <div class="col-md-2 col-sm- team-member">
                 <img src="assets/meghna.jpg" class="team-img">
                 <span class="member-name">Name</span>
             </div>
-            <div class="col-md-2 col-sm-5 team-member">
+            <div class="col-md-2 col-sm- team-member">
                 <img src="assets/meghna.jpg" class="team-img">
                 <span class="member-name">Name</span>
             </div>
-            <div class="col-md-2 col-sm-5 team-member">
+            <div class="col-md-2 col-sm- team-member">
                 <img src="assets/meghna.jpg" class="team-img">
                 <span class="member-name">Name name</span>
             </div>
-            <div class="col-md-2 col-sm-5 team-member">
+            <div class="col-md-2 col-sm- team-member">
                 <img src="assets/meghna.jpg" class="team-img">
                 <span class="member-name">Name</span>
             </div>
-            <div class="col-md-2 col-sm-5 team-member">
+            <div class="col-md-2 col-sm- team-member">
                 <img src="assets/meghna.jpg" class="team-img" >
                 <span class="member-name">Name</span>
             </div>
         </div>
         </div>
     
-        <section class="section register" data-tooltip="Register">
-            <span class="reg" style="color:#fff">REGISTER YOURSELF</span>
+        <section class="section register " data-tooltip="Register" style="margin-bottom:0">
+            <span class="section-heading" style="color:#fff" id="yourself">REGISTER YOURSELF</span>
             <div class="container-fluid">
                 <div class="row justify-content-center">
                 <form id="registration_form" method="POST" class="col-md-10">
@@ -244,11 +254,11 @@
                             </div>
                         </div>
                         <div class="form-row row justify-content-center">
-                            <div class="form-group col-8">
+                            <div class="form-group col-md-8">
                                 <label class="font-weight-bold lab">Course:</label>
                                 <select class="browser-default" id="course">
-                                    <option value="" disabled selected>Choose your Course</option>
-                                    <option value="B.Tech">B.Tech</option>
+                                    <option value="" disabled >Choose your Course</option>
+                                    <option value="B.Tech" selected>B.Tech</option>
                                     <option value="M.Tech">M.Tech</option>
                                     <option value="MBA">MBA</option>
                                     <option value="MCA">MCA</option>
@@ -257,22 +267,22 @@
                         </div>
             
                         <div class="form-row row justify-content-center">
-                            <div class="form-group col-4">
+                            <div class="form-group col-md-4">
                                 <label class="font-weight-bold lab">Year:</label>
                                 <select class="browser-default" id="number">
-                                    <option value="" disabled selected>Choose your year</option>
-                                    <option value="1" id="1">1</option>
+                                    <option value="" disabled >Choose your year</option>
+                                    <option value="1" id="1" selected>1</option>
                                     <option value="2" id="2">2</option>
                                     <option value="3" id="3">3</option>
                                     <option value="4" id="4">4</option>
                                 </select>
                             </div>
             
-                            <div class="form-group col-4">
+                            <div class="form-group col-md-4">
                                 <label class="font-weight-bold lab">Blood Group:</label>
                                 <select class="browser-default">
-                                    <option value="" disabled selected>Choose your Blood Group</option>
-                                    <option value="AP">A+</option>
+                                    <option value="" disabled >Choose your Blood Group</option>
+                                    <option value="AP" selected>A+</option>
                                     <option value="AN">A-</option>
                                     <option value="ABP">AB+</option>
                                     <option value="ABN">AB-</option>
@@ -287,17 +297,33 @@
                         </div>
             
                         <div class="form-row row justify-content-center">
-                            <div class="col-2 font-weight-bold gender ">Gender:</div>
-                            <p class="col-3">
+                            <div class="col-md-2 font-weight-bold gender ">Gender:</div>
+                            <p class="col-md-3">
                                 <label>
                                     <input class="with-gap" type="radio" name="inlineRadioOptions" id="male" value="male" checked />
-                                    <span>Male</span>
+                                    <span >Male</span>
                                 </label>
                             </p>
-                            <p class="col-3">
+                            <p class="col-md-3">
                                 <label>
                                     <input class="with-gap" type="radio" name="inlineRadioOptions" id="female" value="female" />
                                     <span>Female</span>
+                                </label>
+                            </p>
+                        </div>
+
+                        <div class="form-row row justify-content-center">
+                            <div class="col-md-2 font-weight-bold gender ">Hostler:</div>
+                            <p class="col-md-3">
+                                <label>
+                                    <input class="with-gap" type="radio" name="inlineRadioOption" id="Hosteller" value="Hosteller" checked />
+                                    <span>Yes</span>
+                                </label>
+                            </p>
+                            <p class="col-md-3">
+                                <label>
+                                    <input class="with-gap" type="radio" name="inlineRadioOption" id="day_scholar" value="Day_scholar" />
+                                    <span>No</span>
                                 </label>
                             </p>
                         </div>
@@ -314,7 +340,7 @@
                             <div class="form-group col-md-4">
                                 <div class="input-field">
                                     <i class="flaticon-phone-call prefix" style="display:inline"></i>
-                                    <input id="contact_number" type="tel" class="form-control" name="contact" autocomplete="off">
+                                    <input id="contact_number" type="tel" name="contact" autocomplete="off" class="validate">
                                     <label for="contact_number">Contact No.</label>
                                 </div>
                                 <span id="#err_contact_no" class="error"></span>
@@ -324,14 +350,24 @@
                     </div>
                     <div class="row justify-content-center">
                         
-                    <div class="btn col-2" id="regbtn">Register</div>
+                    <button class="btn col-md-2" id = 'register'>Register</button>
                     </div>
                 </form>
                 </div>
             </div>
-            <footer class="footer">Powered by <span class="si">SOFTWARE INCUBATOR</span></footer>
+
+            <div id="sdc">
+                    <a href="http://www.silive.in" target="_blank" style="color: black;">
+                      <span>Site Donated by</span>
+                      <br>
+                      <img src="assets/SILOGO.svg">
+                      <span id="si">SOFTWARE <br> INCUBATOR</span>
+                    </a>
+                  </div>
+            
             </section>
         </div>
+        
        
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>

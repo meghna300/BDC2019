@@ -1,7 +1,7 @@
 
 
 .slide-section {
-  height:100vh;
+  
   overflow: hidden;
 }
 .home {
@@ -202,10 +202,10 @@ margin-top: 1em;
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: black;
-    /* border-bottom: 2px solid black;
-    border-top: 2px solid black; */
+    border-bottom: 2px solid black;
+    /* border-top: 2px solid black; */
     background-color: transparent;
-    /* border-color: black white black; */
+    border-color: black white black;
     font-weight: bold;
     border: none
 }
@@ -298,22 +298,13 @@ label.active{
     color: #fff;
 }
 
-#regbtn{
-    background-color: transparent;
-    color: #fff;
-    box-shadow: none;
-    border: 2px solid #fff;
-    font-size: 1.5rem;
-    border-radius: 4px;
-    height: 3rem;
-    display: inline-block;
-    padding-bottom: 3px;
-    text-align: center;
+#register{
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0.3rem 0.7rem;
 }
-#regbtn:hover, #regbtn:hover.i{
-    color: white;
-    
-}
+
 label{
   color:#fff;
 }
@@ -360,8 +351,8 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 
 @media (max-width: 1200px) {
     .nav-link, .nav-link a{
-        padding: 0.8rem 2rem;
-        font-size: 0.8rem;
+        padding: 0.8rem 1.2rem;
+        font-size: 0.9rem;
     }
     
 }
@@ -442,5 +433,77 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+#student_no{
+  margin-bottom: 0px;
+  color: white;
+  font-weight:bold;
+}
+#name{
+  margin-bottom: 0px;
+  color: white;
+  font-weight:bold;
+}
+#email{
+  margin-bottom: 0px;
+  color: white;
+  font-weight:bold;
+}
+#contact_number{
+  margin-bottom: 0px;
+  color: white;
+  font-weight:bold;
+}
+
+input{
+  color:white
+}
+
+
+@media (max-width: 600px) {
+  #yourself{
+    font-size: 2rem;
+  }
+  
+}
+
+p{
+  margin-bottom: 0;
+}
+
+
+#sdc {
+	position: fixed;
+	bottom: 6vh;
+	left: 3vw;
+  z-index: 1000;
+}
+
+#sdc span {
+	font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+#sdc img {
+  height: 7vh;
+  padding-right: 0.5rem;
+}
+
+#si {
+	font-weight: 700 !important;
+    float: right;
+}
+@media (max-width:992px) {
+  #sdc {
+    position: absolute;
+  }  
+}
+
+@media (max-width: 767px){ 
+  #sdc {
+    bottom: 1vh;
   }
 }
