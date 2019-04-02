@@ -437,6 +437,11 @@
                 var scene = document.getElementById('scene');
                 var parallaxInstance = new Parallax(scene);
             </script>
+            <script>
+            if ($(window).width() < 768) { 
+                console.log("yes");
+                $('#fullpage').removeAttr('id'); 
+                }</script>
         
     </body>
 </html>
