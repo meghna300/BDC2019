@@ -1,5 +1,12 @@
 
-
+body{
+  width:100vw;
+  overflow-x: hidden;
+}
+html{
+  width:100vw;
+  overflow-x: hidden;
+}
 .slide-section {
   
   overflow: hidden;
@@ -7,6 +14,7 @@
 .home {
   background: radial-gradient(#fff,rgb(238, 237, 237));
   background-color: #fff;
+
  
   
 }
@@ -531,6 +539,9 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 
 .facts{
   font-size:3em;
+}
+.team-sub-heading{
+  text-align: center;
 }
 }
 @media only screen and (max-width: 1024px) {
