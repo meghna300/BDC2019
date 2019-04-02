@@ -466,8 +466,9 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     height:auto;
   }
   .landing-back {
-    height:450px;
+    height:300px;
     text-align: justify;
+    margin-top:30px;
   }
   .landing-title {
     /* font-size: 2.5em; */
@@ -522,12 +523,10 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
   padding-right: 0.5rem;
 }
 .back-elements-1{
-  height: 10px;
-  width:10px;
+  display: none;
 }
 .back-elements-2{
-  height: 10px;
-  width:10px;
+  display: none;
 }
 
 .facts{
